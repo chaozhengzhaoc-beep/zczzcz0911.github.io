@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个美丽的个人博客，记录生活中的美好瞬间">
+    <title>静谧花园 | 个人博客</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles"></div>
+
+    <!-- 自定义光标 -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">静谧花园</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#blog" class="nav-link">博客</a>
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#gallery" class="nav-link">画廊</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 Hero 区域 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge reveal">✦ 欢迎来到我的世界</div>
+            <h1 class="hero-title reveal">
+                <span class="title-line">在喧嚣中</span>
+                <span class="title-line accent">寻一处静谧</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                用文字记录生活的温度，用光影捕捉时光的痕迹。<br>
+                这里是属于我的一片静谧花园。
+            </p>
+            <div class="hero-buttons reveal">
+                <a href="#blog" class="btn btn-primary">
+                    <span>探索博客</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-outline">了解更多</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+            <div class="floating-petal petal-1">✿</div>
+            <div class="floating-petal petal-2">❀</div>
+            <div class="floating-petal petal-3">✾</div>
+            <div class="floating-petal petal-4">❁</div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 博客区域 -->
+    <section class="section blog-section" id="blog">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Blog</span>
+                <h2 class="section-title">最新文章</h2>
+                <p class="section-desc">用文字编织生活的诗意</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">
+                        <div class="blog-image-placeholder img-1">
+                            <span>🌸</span>
+                        </div>
+                        <div class="blog-category">生活随笔</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2026.07.01</span>
+                            <span class="blog-read">5 分钟阅读</span>
+                        </div>
+                        <h3 class="blog-title">夏日午后的一杯茶</h3>
+                        <p class="blog-excerpt">
+                            阳光透过百叶窗洒在木桌上，茶香袅袅升起。在这个快节奏的时代，偶尔慢下来，品一杯茶，读一本书，便是最好的时光...
+                        </p>
+                        <a href="posts/post-1.html" class="blog-link">
+                            阅读全文
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">
+                        <div class="blog-image-placeholder img-2">
+                            <span>🌙</span>
+                        </div>
+                        <div class="blog-category">旅行日记</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2026.06.25</span>
+                            <span class="blog-read">8 分钟阅读</span>
+                        </div>
+                        <h3 class="blog-title">在古镇的夜色中漫步</h3>
+                        <p class="blog-excerpt">
+                            石板路在月光下泛着微光，红灯笼在微风中轻轻摇曳。古镇的夜晚，有一种让人沉醉的魔力，仿佛穿越了时光...
+                        </p>
+                        <a href="posts/post-2.html" class="blog-link">
+                            阅读全文
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">
+                        <div class="blog-image-placeholder img-3">
+                            <span>📖</span>
+                        </div>
+                        <div class="blog-category">读书笔记</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2026.06.18</span>
+                            <span class="blog-read">6 分钟阅读</span>
+                        </div>
+                        <h3 class="blog-title">读《小王子》有感</h3>
+                        <p class="blog-excerpt">
+                            "真正重要的东西，用眼睛是看不见的。"每次重读《小王子》，都能从中获得新的感悟。关于爱、关于责任、关于成长...
+                        </p>
+                        <a href="posts/post-3.html" class="blog-link">
+                            阅读全文
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">
+                        <div class="blog-image-placeholder img-4">
+                            <span>🎨</span>
+                        </div>
+                        <div class="blog-category">创意灵感</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2026.06.10</span>
+                            <span class="blog-read">4 分钟阅读</span>
+                        </div>
+                        <h3 class="blog-title">手账里的美好日常</h3>
+                        <p class="blog-excerpt">
+                            用画笔和贴纸记录每一天的小确幸，手账不仅是记录，更是一种生活的仪式感。每一页都是独一无二的艺术品...
+                        </p>
+                        <a href="posts/post-4.html" class="blog-link">
+                            阅读全文
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">
+                        <div class="blog-image-placeholder img-5">
+                            <span>🍃</span>
+                        </div>
+                        <div class="blog-category">生活方式</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2026.06.03</span>
+                            <span class="blog-read">7 分钟阅读</span>
+                        </div>
+                        <h3 class="blog-title">极简生活的艺术</h3>
+                        <p class="blog-excerpt">
+                            少即是多。在这个物质过剩的时代，学会断舍离，让生活回归简单与纯粹。极简不是贫乏，而是一种更高级的丰富...
+                        </p>
+                        <a href="posts/post-5.html" class="blog-link">
+                            阅读全文
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">
+                        <div class="blog-image-placeholder img-6">
+                            <span>✨</span>
+                        </div>
+                        <div class="blog-category">心灵感悟</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">2026.05.28</span>
+                            <span class="blog-read">5 分钟阅读</span>
+                        </div>
+                        <h3 class="blog-title">写给自己的信</h3>
+                        <p class="blog-excerpt">
+                            亲爱的自己，感谢你一路走来的坚持与勇气。那些深夜的眼泪、清晨的微笑，都构成了今天的你。请继续温柔地对待这个世界...
+                        </p>
+                        <a href="posts/post-6.html" class="blog-link">
+                            阅读全文
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-more reveal">
+                <a href="#" class="btn btn-outline">查看更多文章</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="section about-section" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-avatar">
+                        <div class="avatar-placeholder">
+                            <span>🌸</span>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">你好，我是花园的主人</h2>
+                    <p class="about-text">
+                        一个热爱生活、喜欢用文字记录美好的普通人。相信生活中的每一个瞬间都值得被温柔以待。
+                    </p>
+                    <p class="about-text">
+                        在这个小小的博客里，你可以找到我的旅行日记、读书笔记、生活感悟，以及那些让我心动的小确幸。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="128">0</span>
+                            <span class="stat-label">篇文章</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3650">0</span>
+                            <span class="stat-label">天坚持</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="12000">0</span>
+                            <span class="stat-label">位读者</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 画廊 -->
+    <section class="section gallery-section" id="gallery">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">光影瞬间</h2>
+                <p class="section-desc">用镜头捕捉生活中的美好</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder g-1">
+                        <span>🌅</span>
+                        <p>日落时分</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder g-2">
+                        <span>🌊</span>
+                        <p>海边漫步</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder g-3">
+                        <span>🏔️</span>
+                        <p>山间晨雾</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder g-4">
+                        <span>🌿</span>
+                        <p>森林秘境</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder g-5">
+                        <span>🏮</span>
+                        <p>古镇夜色</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder g-6">
+                        <span>🌸</span>
+                        <p>春日花语</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section class="section contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">与我联系</h2>
+                <p class="section-desc">如果你也热爱生活，欢迎与我交流</p>
+            </div>
+            <div class="contact-content reveal">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <span>hello@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <span>中国 · 上海</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="微博">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.194 14.197c0 3.862-5.485 6.993-12.25 6.993-6.763 0-12.25-3.131-12.25-6.993 0-3.863 5.487-6.993 12.25-6.993 6.764 0 12.25 3.13 12.25 6.993zm-1.44-2.744c-.227-.088-.472-.05-.633.158-.617.785-2.137 1.222-3.298 1.045-.24-.034-.461.13-.482.368-.03.25.126.498.37.566 1.565.395 3.483-.17 4.473-1.422.167-.2.053-.524-.21-.62-.073-.03-.148-.065-.22-.095zm-1.188-1.398c-.173-.1-.388-.058-.52.113-.744 1.038-2.897 1.448-4.02 1.09-.192-.06-.424.063-.463.272-.06.25.085.522.315.625 1.76.58 4.344-.023 5.337-1.4.177-.248.024-.568-.292-.685-.117-.044-.237-.024-.357-.015zm-2.03-2.84c-3.5-.82-7.105.794-8.1 3.64-.995 2.84.682 5.81 3.78 6.68 3.1.88 6.68-.77 7.68-3.6.99-2.83-.68-5.78-3.36-6.72z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>静谧花园</h3>
+                <p>在喧嚣中，寻一处静谧。</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">首页</a>
+                <a href="#blog">博客</a>
+                <a href="#about">关于</a>
+                <a href="#gallery">画廊</a>
+                <a href="#contact">联系</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 静谧花园. Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
