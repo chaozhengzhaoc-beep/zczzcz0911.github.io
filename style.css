@@ -1101,6 +1101,27 @@ img {
     color: var(--color-text-muted);
 }
 
+.footer-bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-icp {
+    margin: 0;
+    color: var(--color-text-muted);
+}
+
+.footer-icp:hover {
+    color: var(--color-accent);
+}
+
+.footer-copyright {
+    margin: 0;
+}
+
 /* ---------- 回到顶部 ---------- */
 .back-to-top {
     position: fixed;
