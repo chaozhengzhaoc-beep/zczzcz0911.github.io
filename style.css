@@ -320,6 +320,21 @@ img {
     50% { box-shadow: 0 0 40px rgba(201, 160, 220, 0.2); }
 }
 
+.hero-icp {
+    position: absolute;
+    left: 40px;
+    bottom: 60px;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    z-index: 3;
+    opacity: 0.7;
+}
+
+.hero-icp:hover {
+    opacity: 1;
+    color: var(--color-accent);
+}
+
 .hero-title {
     font-family: var(--font-serif);
     margin-bottom: 32px;
